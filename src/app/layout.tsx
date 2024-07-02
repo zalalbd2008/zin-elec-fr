@@ -37,7 +37,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <ScrollProgressBtn />
+          <ScrollProgressBtn />
+      
       </body>
     </html>
   );

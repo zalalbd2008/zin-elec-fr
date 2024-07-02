@@ -1,7 +1,13 @@
+import { Metadata } from 'next';
+
 import ElectricalService from '@/components/common/electrical-service';
 import Hero from '@/components/common/hero';
 import AboutUsList from '@/features/about-us/components/about-us-list';
 import LightUpFuture from '@/features/about-us/components/light-up-ruture';
+
+export const metadata: Metadata = {
+  title: 'Propos',
+};
 
 async function Page() {
   return (

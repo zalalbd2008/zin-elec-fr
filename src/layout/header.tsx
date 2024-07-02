@@ -10,11 +10,11 @@ async function Header() {
       <div className="flex justify-between">
         <Link href="/" className="p-4">
           <Image
-            className="w-[160px] h-[40px] object-fill"
+            className="w-[150px] h-[40px] object-fill"
             src="/logo.webp"
             alt="logo"
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
             priority
           
           />

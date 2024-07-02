@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
+
 import Hero from '@/components/common/hero';
 import ContactUsList from '@/features/contactez-nous/components/contact-us-list';
-import React from 'react';
 
-function Page() {
+export const metadata: Metadata = {
+  title: 'Contactez-Nous',
+};
+
+async function Page() {
   return (
     <main>
       <Hero

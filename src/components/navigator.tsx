@@ -48,9 +48,10 @@ function Navigation() {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
           <Button
+            title="click me for the see the menu"
             variant="outline"
             size="sm"
-            className="font-normal bg-black/40 hover:bg-black/20 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition"
+            className="font-normal bg-black hover:bg-black/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition"
           >
             <Menu className="size-4 text-2xl" />
           </Button>
@@ -78,7 +79,7 @@ function Navigation() {
   }
 
   return (
-    <div className='flex gap-x-6'>
+    <div className="flex gap-x-6">
       <div className="hidden lg:flex items-center gap-x-7  overflow-y-aut o">
         {routes.map(router => (
           <NavButton
@@ -97,7 +98,9 @@ function Navigation() {
             <Phone className="size-8" />
           </div>
           <div>
-            <p className="text-slate-600 text-[12px] font-semibold">Telephone</p>
+            <p className="text-slate-600 text-[12px] font-semibold">
+              Telephone
+            </p>
             <p className="text-[20px] font-black">
               +33 6 28 91 94 94
             </p>

@@ -69,7 +69,7 @@ function ElectricalService() {
             },
           }}
         >
-          <Link href="/contact-us">
+          <Link href="/contactez-nous">
             <Button className="text-xl font-bold">
               NOUS CONTACTER
             </Button>

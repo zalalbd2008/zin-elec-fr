@@ -32,43 +32,45 @@ const ScrollProgressBtn = () => {
   }, []);
 
   return (
-    <button
-      ref={scrollRef}
-      className={`overflow-hidden bg-orange-400 rounded-full  right-0 bottom-32 mx-5 ${
-        isActive
-          ? 'fixed right-0 transition-[5s]'
-          : 'relative right-[-999px] transition-[5s] '
-      }`}
-      onClick={handleProgressClick}
-      title="Go To Top"
-    >
-      {/* list-style-type: disc; */}
-      <div className="relative">
-        <div className="absolute top-1/4 left-2">
-          <ArrowUp className="size-5 text-white font-bold" />
+    <div className="overflow-x-hidden">
+      <button
+        ref={scrollRef}
+        className={`overflow-hidden  bg-orange-400 rounded-full  right-0 bottom-32 mx-5 ${
+          isActive
+            ? 'fixed right-0 transition-[5s]'
+            : 'relative right-[-999px] transition-[5s] '
+        }`}
+        onClick={handleProgressClick}
+        title="Go To Top"
+      >
+        {/* list-style-type: disc; */}
+        <div className="relative">
+          <div className="absolute top-1/4 left-2">
+            <ArrowUp className="size-5 text-white font-bold" />
+          </div>
+          <svg
+            className="size-9  text-red-500 svg-content"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+            fill="red"
+          >
+            <path
+              d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+              stroke="#f97316"
+              strokeWidth="4"
+              fill="none"
+              style={{
+                strokeDasharray: '308.66px',
+                strokeDashoffset: `${
+                  308.66 - scrollProgress * 3.0866
+                }px`,
+              }}
+            />
+          </svg>
         </div>
-        <svg
-          className="size-9  text-red-500 svg-content"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-          fill="red"
-        >
-          <path
-            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-            stroke="#f97316"
-            strokeWidth="4"
-            fill="none"
-            style={{
-              strokeDasharray: '308.66px',
-              strokeDashoffset: `${
-                308.66 - scrollProgress * 3.0866
-              }px`,
-            }}
-          />
-        </svg>
-      </div>
-    </button>
+      </button>
+    </div>
   );
 };
 
