@@ -78,11 +78,11 @@ async function Footer() {
         {/* item - 2 */}
 
         <div>
-          <h4
+          <h3
             className={`text-xl font-bold ${poppins.className}`}
           >
             Nos Services
-          </h4>
+          </h3>
           <ol className="px-4 mt-4">
             <li
               className="py-2 text-[13px] font-semibold"
@@ -112,11 +112,11 @@ async function Footer() {
         </div>
         {/* item - 3 */}
         <div>
-          <h4
+          <h3
             className={`text-xl font-bold ${poppins.className}`}
           >
             Contactez Nous
-          </h4>
+          </h3>
           <p className="font-medium mt-2">
             Contactez-nous dès aujourd’hui pour des
             solutions électriques sur mesure adaptées à vos
@@ -131,12 +131,13 @@ async function Footer() {
         </div>
         {/* item - 4 */}
         <div>
-          <h4
+          <h3
             className={`text-xl font-bold ${poppins.className}`}
           >
             Notre Address
-          </h4>
+          </h3>
           <iframe
+            title="mapbox"
             className="w-10/12 border-[7px] border-white mt-5"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187663.45587890272!2d2.5926838139387662!3d42.69860699206711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b06e4e80fd88fd%3A0x1c83306520f2dd4f!2sPerpignan!5e0!3m2!1sfr!2sfr!4v1715591421541!5m2!1sfr!2sfr"
             width="600"
