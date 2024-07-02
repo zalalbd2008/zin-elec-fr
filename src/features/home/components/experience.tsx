@@ -115,7 +115,6 @@ function Experience() {
                   },
                 }}
               >
-             
                 <h3 className="text-2xl font-medium font-bebas">
                   SOUS LICENCE ET APPROUVÉ PAR DES MILLIERS
                   DE PERSONNES
@@ -130,8 +129,8 @@ function Experience() {
                   l’industrie. Rejoignez-nous pour une
                   expérience électrique sans compromis
                 </p>
-                <Link href="/propos">
-                  <Button className="mt-5 w-1/3">
+                <Link className="mt-5 w-1/3" href="/propos">
+                  <Button className="w-full font-bold">
                     EN SAVOIR PLUS
                   </Button>
                 </Link>
