@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Bebas_Neue } from 'next/font/google';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
 
+import { Button } from '@/components/ui/button';
 
 const bebas_neue = Bebas_Neue({
   subsets: ['latin', 'latin-ext'],
@@ -89,7 +90,6 @@ function Experience() {
                 />
               </motion.div>
             </motion.div>
-            {/* TODO: change the variants  */}
             <motion.div
               initial="offscreen"
               whileInView="onscreen"
@@ -115,6 +115,7 @@ function Experience() {
                   },
                 }}
               >
+             
                 <h3 className="text-2xl font-medium font-bebas">
                   SOUS LICENCE ET APPROUVÉ PAR DES MILLIERS
                   DE PERSONNES
@@ -129,9 +130,11 @@ function Experience() {
                   l’industrie. Rejoignez-nous pour une
                   expérience électrique sans compromis
                 </p>
-                <Button className="mt-5 w-1/3">
-                  EN SAVOIR PLUS
-                </Button>
+                <Link href="/propos">
+                  <Button className="mt-5 w-1/3">
+                    EN SAVOIR PLUS
+                  </Button>
+                </Link>
               </motion.div>
             </motion.div>
           </div>
