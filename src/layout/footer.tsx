@@ -34,6 +34,7 @@ async function Footer() {
           </p>
           <div className="flex gap-x-7 my-5">
             <Link
+              aria-label="Visit our Facebook page"
               className="hover:scale-110 transition-all border  p-2 border-orange-300 rounded-2xl  hover:bg-orange-300"
               href="https://www.facebook.com/"
             >
@@ -46,8 +47,8 @@ async function Footer() {
               </svg>
             </Link>
             <Link
+              aria-label="Visit our Twitter page"
               className="hover:scale-110 transition-all border  p-2 border-orange-300 rounded-2xl  hover:bg-orange-300"
-            
               href="https://x.com/?lang=en"
             >
               <svg
@@ -59,8 +60,8 @@ async function Footer() {
               </svg>
             </Link>
             <Link
+              aria-label="Visit our Vimeo page"
               className="hover:scale-110 transition-all border  p-2 border-orange-300 rounded-2xl  hover:bg-orange-300"
-              
               href="https://vimeo.com/"
             >
               {' '}
