@@ -115,10 +115,10 @@ function Experience() {
                   },
                 }}
               >
-                <h4 className="text-2xl font-medium font-bebas">
+                <h3 className="text-2xl font-medium font-bebas">
                   SOUS LICENCE ET APPROUVÉ PAR DES MILLIERS
                   DE PERSONNES
-                </h4>
+                </h3>
                 <p className="font-medium mt-4">
                   notre engagement envers l’excellence et la
                   satisfaction client est inébranlable. Nous
