@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Poppins, Exo } from 'next/font/google';
+
 import { Button } from '@/components/ui/button';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
@@ -20,14 +22,17 @@ async function Footer() {
       <div className="lg:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5">
         {/* item - 1  */}
         <div>
-          <Image
-            className="w-[100px] h-[25px] object-fill"
-            src="/logo.webp"
-            alt="logo"
-            width={100}
-            height={100}
-            priority={true}
-          />
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              className="w-[100px] h-[25px] object-fill"
+              src="/logo.webp"
+              alt="logo"
+              width={100}
+              height={100}
+              loading="lazy"
+            />
+          </AspectRatio>
+
           <p className="font-medium mt-4">
             Votre partenaire électrique de confiance,
             toujours là pour illuminer votre chemin.
