@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Bebas_Neue } from 'next/font/google';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Test } from '@/components/test';
+
 
 const bebas_neue = Bebas_Neue({
   subsets: ['latin', 'latin-ext'],
