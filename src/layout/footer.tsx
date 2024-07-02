@@ -22,16 +22,14 @@ async function Footer() {
       <div className="lg:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5">
         {/* item - 1  */}
         <div>
-          <AspectRatio ratio={16 / 9}>
-            <Image
-              className="w-[100px] h-[25px] object-fill"
-              src="/logo.webp"
-              alt="logo"
-              width={100}
-              height={100}
-              loading="lazy"
-            />
-          </AspectRatio>
+          <Image
+            className="w-[100px] h-[25px] object-fill"
+            src="/logo.webp"
+            alt="logo"
+            width={100}
+            height={100}
+            loading="lazy"
+          />
 
           <p className="font-medium mt-4">
             Votre partenaire électrique de confiance,
