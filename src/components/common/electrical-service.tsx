@@ -53,7 +53,6 @@ function ElectricalService() {
               height={300}
               priority
               quality={75}
-              objectFit="cover"
             />
           </h1>
         </motion.div>
