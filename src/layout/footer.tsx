@@ -78,11 +78,11 @@ async function Footer() {
         {/* item - 2 */}
 
         <div>
-          <h3
+          <h1
             className={`text-xl font-bold ${poppins.className}`}
           >
             Nos Services
-          </h3>
+          </h1>
           <ol className="px-4 mt-4">
             <li
               className="py-2 text-[13px] font-semibold"
@@ -112,11 +112,11 @@ async function Footer() {
         </div>
         {/* item - 3 */}
         <div>
-          <h3
+          <h1
             className={`text-xl font-bold ${poppins.className}`}
           >
             Contactez Nous
-          </h3>
+          </h1>
           <p className="font-medium mt-2">
             Contactez-nous dès aujourd’hui pour des
             solutions électriques sur mesure adaptées à vos
@@ -131,11 +131,11 @@ async function Footer() {
         </div>
         {/* item - 4 */}
         <div>
-          <h3
+          <h1
             className={`text-xl font-bold ${poppins.className}`}
           >
             Notre Address
-          </h3>
+          </h1>
           <iframe
             title="mapbox"
             className="w-10/12 border-[7px] border-white mt-5"
