@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/layout/header';
 import Footer from '@/layout/footer';
 import ScrollProgressBtn from '@/components/scroll-progress-btn';
+import Head from 'next/head';
 
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     default: 'électricien Perpignan',
     template: '%s | électricien Perpignan',
   },
+
 };
 
 export default function RootLayout({
@@ -31,14 +33,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="description"
+          content="This is a agency website"
+        />
+      </Head>
       <body
         className={`${bebasNeue.variable} ${rajdhani.variable}`}
       >
         <Header />
         {children}
         <Footer />
-          <ScrollProgressBtn />
-      
+        <ScrollProgressBtn />
       </body>
     </html>
   );
