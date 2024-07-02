@@ -67,7 +67,7 @@ function OurCompany() {
           className=" mx-auto block mt-10 i"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true}}
+          viewport={{ once: true }}
         >
           <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-rajdhan">
             <motion.div

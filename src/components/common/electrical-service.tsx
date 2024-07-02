@@ -20,7 +20,7 @@ function ElectricalService() {
     },
   };
   return (
-    <section className="electrical-background min-h-[400px] lg:min-h-full flex items-center md:block">
+    <section className="electrical-background min-h-[400px] lg:min-h-[300px] flex items-center md:block">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -70,9 +70,11 @@ function ElectricalService() {
           }}
         >
           <Link href="/contact-us">
-            <Button>NOUS CONTACTER</Button>
+            <Button className="text-xl font-bold">
+              NOUS CONTACTER
+            </Button>
           </Link>
-          <div className="text-white mt-4 font-bebas  text-xl">
+          <div className="text-white mt-4 font-bebas  text-xl ">
             +33 6 28 91 94 94
           </div>
         </motion.div>

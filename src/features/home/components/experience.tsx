@@ -82,7 +82,7 @@ function Experience() {
               <motion.div variants={imagesVariants}>
                 <Image
                   src="/images/experience-2.jpg"
-                  className="w-[400px]  rounded-[140px]"
+                  className="w-[400px]  rounded-[140px] p-2 lg:p-0"
                   alt="logo"
                   width={200}
                   height={300}
@@ -100,7 +100,7 @@ function Experience() {
                 className="flex flex-col lg:items-start text-start p-10 lg:p-0 overflow-hidden"
                 variants={{
                   offscreen: {
-                    x: 999, // Move off-screen based on viewport width
+                    x: 999,
                     transition: {
                       ease: 'easeInOut',
                       duration: 0.4,

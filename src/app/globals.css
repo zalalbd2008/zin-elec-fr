@@ -43,6 +43,7 @@
     url(/background-image/electric-services.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .home-service-background {
@@ -58,6 +59,14 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.about-us-background {
+  background-size: initial;
+
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-image: url(https://electricien-perpignan.fr/wp-content/uploads/2024/04/construction-15-td-20.png) !important;
 }
 
 @layer base {
