@@ -38,7 +38,7 @@ async function ServiceList({
             services professionnels.
           </p>
           <Link
-            href="/service"
+            href="/services"
             className="flex justify-start lg:justify-end mt-5"
           >
             <Button
