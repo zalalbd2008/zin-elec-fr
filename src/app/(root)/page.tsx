@@ -4,6 +4,7 @@ import Experience from '@/features/home/components/experience';
 import ElectricalService from '@/components/common/electrical-service';
 import ServiceList from '@/features/service/components/common/service-list';
 import ServiceItem from '@/features/service/components/common/service-item';
+import Operate from '@/features/home/components/operate';
 
 export default async function Home() {
   return (
@@ -13,7 +14,7 @@ export default async function Home() {
       <Experience />
 
       <section className="relative bg-[#f1e8dc] ">
-        <div className='overflow-hidden'>
+        <div className="overflow-hidden">
           <div className="home-service-background h-[300px]" />
         </div>
         <div className="lg:container p-4 py-12 lg:px-[85px] ">
@@ -25,6 +26,7 @@ export default async function Home() {
         </div>
       </section>
       <ElectricalService />
+      {/* <Operate /> */}
     </main>
   );
 }

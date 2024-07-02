@@ -2,13 +2,17 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 interface Props {
   title1: string;
-  title2: string;
+  title2?: string;
   des: string;
+  show?: boolean;
 }
 
-function Hero({ title1, des, title2 }: Props) {
+function Hero({ title1, des, title2, show }: Props) {
   const showVarients = {
     initial: {
       opacity: 0,
@@ -52,6 +56,17 @@ function Hero({ title1, des, title2 }: Props) {
           className="lg:w-1/3 font-rajdhani fotn-bold text-white pt-3"
         >
           {des}
+          <Link
+            href="/contactez-nous"
+            className={cn(
+              'mt-4',
+              show ? 'block' : 'hidden'
+            )}
+          >
+            <Button className="text-xl font-bold p-4">
+              +33 6 28 91 91 94
+            </Button>
+          </Link>
         </motion.p>
       </article>
     </section>

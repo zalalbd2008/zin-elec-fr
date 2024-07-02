@@ -3,6 +3,7 @@ import { Bebas_Neue, Rajdhani } from 'next/font/google';
 import './globals.css';
 import Header from '@/layout/header';
 import Footer from '@/layout/footer';
+import ScrollProgressBtn from '@/components/scroll-progress-btn';
 
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollProgressBtn />
       </body>
     </html>
   );
