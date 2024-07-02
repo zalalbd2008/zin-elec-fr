@@ -8,6 +8,7 @@ import Service from '@/features/service/components/service';
 
 export const metadata: Metadata = {
   title: 'Services',
+  description: 'Servicesélectricien Perpignan',
 };
 
 async function Page() {

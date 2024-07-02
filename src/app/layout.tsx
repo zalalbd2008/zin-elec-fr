@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     default: 'électricien Perpignan',
     template: '%s | électricien Perpignan',
   },
-
+  description: 'Contactez-Nous électricien Perpignan',
 };
 
 export default function RootLayout({
@@ -33,12 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="description"
-          content="This is a agency website"
-        />
-      </Head>
       <body
         className={`${bebasNeue.variable} ${rajdhani.variable}`}
       >

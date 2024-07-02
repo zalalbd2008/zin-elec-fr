@@ -7,6 +7,7 @@ import LightUpFuture from '@/features/about-us/components/light-up-ruture';
 
 export const metadata: Metadata = {
   title: 'Propos',
+  description: 'Propos électricien Perpignan',
 };
 
 async function Page() {
