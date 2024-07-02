@@ -52,7 +52,7 @@ function Navigation() {
             title="click me for the see the menu"
             variant="outline"
             size="sm"
-            className="font-normal bg-black hover:bg-black/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition text-[24px] p-2"
+            className="font-normal bg-black hover:bg-black/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition text-[24px] p-2 border border-red-500 h-full"
           >
             <Menu className="size-6 " />
           </Button>

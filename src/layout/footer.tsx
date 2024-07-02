@@ -24,8 +24,8 @@ async function Footer() {
             className="w-[100px] h-[25px] object-fill"
             src="/logo.webp"
             alt="logo"
-            width={100}
-            height={100}
+            width={300}
+            height={300}
             priority={true}
           />
           <p className="font-medium mt-4">

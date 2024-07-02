@@ -7,7 +7,7 @@ import Link from 'next/link';
 async function Header() {
   return (
     <header className="lg:container px-3 lg:px-16 p-2">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <Link href="/" className="p-4">
           <Image
             className="w-[150px] h-[40px] object-fill"
