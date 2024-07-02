@@ -48,6 +48,11 @@ function Navigation() {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
           <Button
+            type="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="radix-:r0:"
+            data-state="closed"
             title="click me for the see the menu"
             variant="outline"
             size="sm"
