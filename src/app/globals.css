@@ -2,32 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.hero-background {
+  background-image: url('/background-image/fond-elec.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
+.common-background {
+  background-image: linear-gradient(
+      70deg,
+      #333333 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url('/background-image/common-background.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shape {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZiZjdmNCI+PHBhdGggZD0iTTAgMHYxNDBoMTI4MEwwIDB6IiBmaWxsLW9wYWNpdHk9Ii41Ii8+PHBhdGggZD0iTTAgNDJ2OThoMTI4MEwwIDQyeiIvPjwvZz48L3N2Zz4=);
+  background-size: 100% 70px;
+  top: 0;
+  height: 70px;
+  z-index: 1;
+  transform: scale(1, -1);
+}
+
+.transiton-c:hover {
+  transform: translateY(-10px) !important;
+}
+
+.electrical-background {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.67) 0%,
+      rgba(0, 0, 0, 0.67) 100%
+    ),
+    url(/background-image/electric-services.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-service-background {
+  transform: scale(1, -1);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0iI2ZmZmZmZiIgdmlld0JveD0iMCAwIDE5MjAgMTQ0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTE3NC44MS40N2wtNTkuNzQsMEwxMzk3LjEzLDI3MmgtNy4zTDExMDcuNzguNWMtMTMxLjY5LDAtMjU5LjE5LjA2LTM2NC40OSwwTDE2OTMuMyw5MTVIODY3TDAsODBWMTQ0MEgxOTIwVjcxNy43OFoiLz4KCQkJCQkJCQkJPHBhdGggZD0iTTE5MjAsMzM0LjA3VjBzLTE0Ni44Ny4xMy0zNDYuNzkuMjZaIi8+PC9zdmc+);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow: hidden;
+  bottom: 100px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24.6 95% 53.1%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24.6 95% 53.1%;
+    --radius: 0.3rem;
+    --hero-background: './background-image/fond-elec.webp';
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 20.5 90.2% 48.2%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 20.5 90.2% 48.2%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-rajdhani;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bebas;
   }
 }

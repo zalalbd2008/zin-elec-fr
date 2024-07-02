@@ -1,0 +1,7 @@
+UI 
+ --> Aceternity for better UI  
+ --> Shadcn UI
+ --> Interativity Framer Motion
+ --> Tailwind css 
+ 
+  
