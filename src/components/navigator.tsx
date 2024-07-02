@@ -49,16 +49,12 @@ function Navigation() {
         <SheetTrigger>
           <Button
             type="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-            aria-controls="radix-:r0:"
-            data-state="closed"
             title="click me for the see the menu"
             variant="outline"
             size="sm"
             className="font-normal bg-black hover:bg-black/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition "
           >
-            <Menu className="size-6 text-2xl" />
+            <Menu className="size-6 text-[24px]" />
           </Button>
         </SheetTrigger>
         <SheetContent side="right" className="px-2">
